@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Layout for a single List item-->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background"
+
+    >
+
+    <ImageView
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="88dp"
+        android:id="@+id/list_icon_item"
+        android:src="@mipmap/ic_launcher"
+
+
+        />
+<!--LayOut for Miwok and English words-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:orientation="vertical"
+        android:id="@+id/text_container"
+        android:background="@color/category_numbers"
+        android:paddingLeft="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/list_icon_item"
+
+
+        >
+
+        <!--TextView (English)-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/Miwok_Number"
+        tools:text="lutti"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:gravity="bottom"
+        android:layout_weight="1"
+
+        />
+
+        <!--TextView (Miwok)-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/English_Number"
+        android:textStyle="italic"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        tools:text="gutti"
+        android:gravity="top"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
+
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_play_arrow_white_24dp"/>
+
+
+
+
+</RelativeLayout>
